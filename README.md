@@ -47,5 +47,5 @@
 
 #### **Description about function** ####
 
-1.  Login: code will write in api/user.go 
-2.  GetUserInfo: code will write in api/user.go (send request with jwt token which all function in token/*.go) 
+1.  Login: code will be written in api/user.go 
+2.  GetUserInfo: code will be written in api/user.go (send request with jwt token which all function in token/*.go) 
