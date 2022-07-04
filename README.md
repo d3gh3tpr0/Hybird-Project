@@ -1,26 +1,32 @@
-### Source structure ###
+### ***Source structure*** ###
 ```
+.
 ├── api
-│   └── server.go
+│   ├── server.go
+│   └── user.go
 ├── config.env
 ├── database
 │   ├── gorm
+│   │   └── gorm.txt
 │   ├── migration
+│   │   └── migration.txt
 │   ├── mock
+│   │   └── mock.txt
 │   └── util
 │       ├── config.go
 │       └── password.go
+├── docs
 ├── go.mod
 ├── main.go
 ├── Makefile
-├── readme.md
+├── README.md
 └── token
     ├── jwt_token.go
     └── payload.go
 ```
 
 
-**Description** 
+#### **Description about source structure** #### 
 
 1. api
     - server.go :  config and setup all router 
@@ -33,6 +39,13 @@
 3. token 
     - jwt_token.go  : file code for all funtion solving jwt token
     - payload.go    : file code for all function solving payload 
-4. main.go      : file code for connecting to database and start server
-5. Makefile     : file saving all command(CLI) during coding development
-6. config.env   : file saving all environment variables and symetric key for encrypting and decrypting password, link for connecting to database, server address, duration of token ...
+4. docs         : folder where developers generate swagger documentation 
+5. main.go      : file code for connecting to database and start server
+6. Makefile     : file saving all command(CLI) during coding development
+7. config.env   : file saving all environment variables and symetric key for encrypting and decrypting password, link for connecting to database, server address, duration of token ...
+
+
+#### **Description about function** ####
+
+1.  Login: code will write in api/user.go 
+2.  GetUserInfo: code will write in api/user.go (send request with jwt token which all function in token/*.go) 
